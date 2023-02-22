@@ -134,8 +134,8 @@ You can use this link <https://app.powerbi.com/home>
 
 From the portal create a new blank report
 
- 1. Select paste or manually enter data
- 2. Select and paste this table of example data
+ 1. Select `Paste or manually enter data`
+ 2. Select and paste the following data using `Ctrl+C` then `Ctrl+V`:
 
 ```text
 Road	Carriageway	SLK From	SLK To	Offset	Colour (CSS)
@@ -146,7 +146,7 @@ H016	L	4	7	-20	magenta
 ```
 
 3. Click use first row as headers
-4.  Click create report
+4. Click create report
 
 ### 1.9. Save your new report
 
@@ -169,8 +169,23 @@ Back in your new report
 1. Click the edit button to go into edit mode
 2. Create a new page
 3. Thens select the development mode visual
-4. 
+
 ![Development Visual Icon Selection](./readme_extras/powerbi-development-visual-icon.jpg)
+
+You should now see development mode visual with `Update count:` as shown in the screenshot above.
+
+> NOTE: You may see warnings or prompts from your browser:
+> This is because the custom visual is being
+> 
+> - served on the codespace
+> - forwarded and served on your local computer by visual studio code
+>   <br>(try open <https://localhost:8080/assets>)
+> - loaded from your local machine onto your report in the portal
+>
+> Even though the entire process is encrypted and served over HTTPS,
+> and the traffic to and from the visual is safe,
+> your browser unable to verify the HTTPS connection because
+> it does not come from a registered domain name.
 
 ## 2. Session 2 - Modifying the visual Template
 
